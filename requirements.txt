@@ -1,0 +1,19 @@
+# Data Science and Machine Learning Dependencies for Crop Yield Prediction
+
+# Core data science libraries
+pandas>=1.3.0
+numpy>=1.21.0
+
+# Visualization libraries
+matplotlib>=3.5.0
+seaborn>=0.11.0
+
+# Machine learning library
+scikit-learn>=1.0.0
+
+# Excel file reading support
+openpyxl>=3.0.0
+
+# Optional: Jupyter notebook support
+jupyter>=1.0.0
+ipykernel>=6.0.0
