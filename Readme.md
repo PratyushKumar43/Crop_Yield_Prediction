@@ -95,7 +95,31 @@ ipykernel>=6.0.0        # IPython kernel for Jupyter
 
 ## 📖 Usage
 
-### Running the Analysis
+### 🚀 Quick Start - Streamlit Web App (Recommended)
+
+The easiest way to explore this project is through our interactive Streamlit web application:
+
+1. **Launch the app**
+   ```bash
+   python run_app.py
+   ```
+   Or manually:
+   ```bash
+   streamlit run streamlit_app.py
+   ```
+
+2. **Open your browser** to `http://localhost:8501`
+
+3. **Explore the features**:
+   - 🏠 **Overview**: Project summary and key insights
+   - 📊 **Data Analysis**: Interactive visualizations and EDA
+   - 🔮 **Prediction**: Real-time crop yield predictions
+   - 📈 **Model Performance**: Compare model accuracy
+   - 📋 **Data Explorer**: Browse and filter the dataset
+
+### 📓 Jupyter Notebook Analysis
+
+For detailed analysis and model development:
 
 1. **Start Jupyter Notebook**
    ```bash
@@ -109,7 +133,15 @@ ipykernel>=6.0.0        # IPython kernel for Jupyter
 
 3. **Execute cells sequentially** or run all cells to see the complete analysis
 
-### Quick Start
+### 🤖 Train Models
+
+To retrain the machine learning models:
+
+```bash
+python train_models.py
+```
+
+### Quick Start Code
 ```python
 # Load and preview the dataset
 import pandas as pd
@@ -186,13 +218,25 @@ Crop Yield Prediction/
 ├── 📄 crop yield prediction.pdf       # Project report
 ├── 📝 description.md                  # Project description
 ├── 📖 Readme.md                       # This file
-└── 📋 requirements.txt                # Dependencies list
+├── 📋 requirements.txt                # Dependencies list
+├── 🌐 streamlit_app.py                # Streamlit web application
+├── 🤖 model_utils.py                  # Model training utilities
+├── 🚂 train_models.py                 # Model training script
+├── 🚀 run_app.py                      # Quick start script
+├── 📚 STREAMLIT_README.md             # Streamlit app documentation
+└── 📁 models/                         # Saved ML models (created after training)
+    ├── decision_tree_model.pkl
+    └── random_forest_model.pkl
 ```
 
 ## 🛠️ Technologies Used
 
 ### Programming Language
 - **Python 3.7+** - Core programming language
+
+### Web Application
+- **Streamlit** - Interactive web application framework
+- **Plotly** - Interactive data visualization
 
 ### Data Science Libraries
 - **Pandas** - Data manipulation and analysis
@@ -205,6 +249,7 @@ Crop Yield Prediction/
   - Model Selection (train_test_split, GridSearchCV)
   - Regression Models (DecisionTreeRegressor, RandomForestRegressor)
   - Metrics (MSE, MAE, R² Score)
+- **Joblib** - Model persistence and serialization
 
 ### Development Environment
 - **Jupyter Notebook** - Interactive development environment
